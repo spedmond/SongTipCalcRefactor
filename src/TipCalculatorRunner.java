@@ -35,7 +35,7 @@ public class TipCalculatorRunner {
                 System.out.println("Total before tip: $" + String.format("%.2f",tip.getTotalBillBeforeTip()));
                 System.out.println("Tip percentage: " + tip.getTipPercentage() + "%");
                 System.out.println("Tip amount: $" + String.format("%.2f",tip.tipAmount()));
-                System.out.println("Total bill: $" + tip.totalBill());
+                System.out.println("Total bill: $" + String.format("%.2f",tip.totalBill()));
                 System.out.println("Total per person (before tip): $" + String.format("%.2f",tip.perPersonCostBeforeTip()));
                 System.out.println("Total tip per person: $" + String.format("%.2f",tip.perPersonTipAmount()));
                 System.out.println("Total per person (after tip): $" + String.format("%.2f",tip.perPersonTotalCost()));
