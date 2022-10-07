@@ -32,13 +32,13 @@ public class TipCalculatorRunner {
             }
             else if (option == 2) {
                 System.out.println("TOTAL BILL: ");
-                System.out.println("Total before tip: $" + tip.getTotalBillBeforeTip());
+                System.out.println("Total before tip: $" + String.format("%.2f",tip.getTotalBillBeforeTip()));
                 System.out.println("Tip percentage: " + tip.getTipPercentage() + "%");
-                System.out.println("Tip amount: $" + tip.tipAmount());
+                System.out.println("Tip amount: $" + String.format("%.2f",tip.tipAmount()));
                 System.out.println("Total bill: $" + tip.totalBill());
-                System.out.println("Total per person (before tip): $" + tip.perPersonCostBeforeTip());
-                System.out.println("Total tip per person: $" + tip.perPersonTipAmount());
-                System.out.println("Total per person (after tip): $" + tip.perPersonTotalCost());
+                System.out.println("Total per person (before tip): $" + String.format("%.2f",tip.perPersonCostBeforeTip()));
+                System.out.println("Total tip per person: $" + String.format("%.2f",tip.perPersonTipAmount()));
+                System.out.println("Total per person (after tip): $" + String.format("%.2f",tip.perPersonTotalCost()));
                 System.out.print("Thank you for using TIP CALCULATOR!");
                 loop = false;
             }
